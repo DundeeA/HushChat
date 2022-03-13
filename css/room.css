@@ -1,0 +1,64 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: gray;
+  
+}
+
+#chatSection {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5% 90% 5%;
+  justify-items: center;
+  align-items: center;
+  margin: 0%;
+
+  border-width: 3px;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: black;
+
+  width: 40%;
+  height: 80%;
+}
+
+#chatSection h1 {
+  margin: 0%;
+  text-align: center;
+}
+
+#messageForm {
+  width: 100%;
+  grid-row: -1 / -2;
+}
+
+#messageInput {
+  margin: 0%;
+  margin-left: 5%;
+
+  width: 80%;
+}
+
+#sendButton {
+  margin: 0;
+}
+
+#messagesArea {
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+}
+
+/*Stylize messages*/
+
+.messageBlock {
+  width: 100%;
+}
+
+.messageBlock b,
+p {
+  margin-left: 2%;
+}

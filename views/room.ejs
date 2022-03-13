@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/room.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room</title>
+    <link rel="icon" href="../css/favicon.ico" />
+  </head>
+
+  <body>
+    <section id="chatSection">
+      <h1 id="roomname"></h1>
+
+      <div id="messagesArea"></div>
+
+      <form action="submit" id="messageForm">
+        <input
+          type="text"
+          id="messageInput"
+          placeholder="Type your message here..."
+          autocomplete="off"
+        />
+        <button id="sendButton">Send</button>
+      </form>
+    </section>
+
+    <script src="../javascript/room.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Cambay", sans-serif;
+  color: #2d9723;
+  font-weight: bold;
+  font-size: 7em;
+  margin: 2em 0 0 0;
+}
+
+p {
+  color: #454545;
+}
+
+button {
+  height: 3em;
+  width: 17em;
+  margin: 15px;
+}
+
+#maincontent {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0%;
+  position: absolute;
+  text-align: center;
+}
+
+#buttons {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+
+  background-color: rgba(255, 0, 0, 0);
+}
+
+#joincontent,
+#createcontent {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+#joincontent input , #createcontent input {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+}
+
+#joincontent .buttons {
+  display: flex;
+  flex-direction: row;
+}
