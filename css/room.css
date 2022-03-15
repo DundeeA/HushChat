@@ -60,5 +60,6 @@ body {
 
 .messageBlock b,
 p {
+  overflow-wrap: break-word;
   margin-left: 2%;
 }

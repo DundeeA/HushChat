@@ -33,14 +33,14 @@ setInterval(() => {
         if (
           parseInt(currenttime) >=
             parseInt(roomtime) + parseInt(roomLifeSpan) ||
-          parseInt(currenttime) < parseInt(roomLifeSpan)
+          parseInt(currenttime) < parseInt(roomtime)
         ) {
           deleteRoom(room);
         }
       });
     });
   }
-}, roomLifeSpan * 60000);
+}, 5 * 60000);
 
 //Socket io
 const io = require("socket.io")(3030, {

@@ -32,11 +32,11 @@ function getUsername() {
 // request chat log on connection
 socket.emit('gethistory', currentRoom);
 
-//   SUBMIT FORM  \\
+//   SUBMIT MESSAGE FORM  \\
 messageForm.addEventListener("submit", (e) => {
   let name = user;
   let message = messageInput.value;
-  socket.emit("message", { name: name, message: message, room: currentRoom });
+  socket.emit("message", { name: name, message: message, room: currentRoom }); //send all message data to server
   createMessage({ name: name, message: message });
 
   messageInput.value = "";
@@ -84,7 +84,7 @@ function createMessage(m) {
   messagesArea.scrollTop = messagesArea.scrollHeight;
 }
 
-//getting room name from server
+//getting room name from server (maybe just do this with EJS when room is loaded)
   socket.emit('getname', currentRoom);
   socket.on('roomname', (arg) =>{
    roomName.innerText = arg;

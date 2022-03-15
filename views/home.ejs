@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/home.css" />
     <title>HUSH</title>
-    <link rel="icon" href="../css/favicon.ico">
+    <link rel="icon" href="../css/favicon.ico" />
   </head>
-  
+
   <body>
     <section id="maincontent">
-      <h1>HUSH CHAT</h1><span></span>
+      <h1>HUSH CHAT</h1>
+      <span></span>
 
       <div id="buttons">
         <button id="joinButton">Join Room</button>
@@ -19,34 +20,42 @@
         <button id="createButton">Create Room</button>
       </div>
       <div id="description">
-      <p>
-       Hush chat is an anonoymous chatting service all room data is deleted after 15 minutes of inactivity.
-
-      </p>
-
+        <p>
+          Hush chat is an anonoymous chatting service all room data is deleted
+          after 15 minutes of inactivity.
+        </p>
       </div>
     </section>
 
+    <form action="submit" id="joincontent">
+      <h1>JOIN</h1>
+      <label for="idinput" style="color: white;">Room Id</label>
+      <input
+        id="idinput"
+        name="idinput"
+        type="text"
+        placeholder="Enter room key"
+        autocomplete="off"
+      />
+      <div class="buttons">
+        <button id="joinbackbutton">back</button>
+        <button id="enterbutton">enter</button>
+      </div>
+    </form>
 
-<form action="submit" id="joincontent">
-  <h1>JOIN</h1>
-<input id="idinput" type="text" placeholder="Enter room key">
-<div class="buttons">
-  <button id="joinbackbutton" >back</button> 
-  <button id="enterbutton" >enter</button>
-</div>
-</form>
-
-
-  <form action="submit" id="createcontent">
-    <h1>CREATE</h1>
-    <input id="nameinput" type="text" placeholder="Enter room name">
-    <div class="buttons">
-      <button id="createbackbutton" >back</button> 
-      <button id="createjoinbutton" >enter</button>
-    </div>
-  </form>
-
+    <form action="submit" id="createcontent">
+      <h1>CREATE</h1>
+      <input
+        id="nameinput"
+        type="text"
+        placeholder="Enter room name"
+        autocomplete="off"
+      />
+      <div class="buttons">
+        <button id="createbackbutton">back</button>
+        <button id="createjoinbutton">enter</button>
+      </div>
+    </form>
 
     <script src="../javascript/home.js" type="module"></script>
   </body>

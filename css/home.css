@@ -10,8 +10,8 @@ h1 {
   font-family: "Cambay", sans-serif;
   color: #2d9723;
   font-weight: bold;
-  font-size: 7em;
-  margin: 2em 0 0 0;
+  font-size: 12em;
+  margin: 1em 0 0 0;
 }
 
 p {
@@ -19,9 +19,14 @@ p {
 }
 
 button {
-  height: 3em;
-  width: 17em;
+  height: 4em;
+  width: 30em;
+  font-size: 15px;
   margin: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #maincontent {
@@ -54,10 +59,11 @@ button {
   visibility: hidden;
 }
 
-#joincontent input , #createcontent input {
+#joincontent input,#createcontent input {
   align-self: center;
   text-align: center;
-  width: 100%;
+  
+  width: 60%;
 }
 
 #joincontent .buttons {
